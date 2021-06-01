@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...props</title>
+</head>
+<body>
+    <script>
+        let arr1=[1,3,5,7,9]
+        let arr2=[2,4,6,8,10]
+        console.log("展示arr1:"+arr1)
+        console.log(...arr1)//seperate show
+        console.log([...arr1,...arr2])//put into an array
+
+        //sum()
+        function sum(...numbers){
+           return numbers.reduce((preValue,currentValue)=>{
+                return preValue+currentValue
+
+            })
+        }
+        console.log(sum(1,2,3,5))//参数不定使的相加
+    </script>
+    
+</body>
+</html>
